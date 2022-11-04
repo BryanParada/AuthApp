@@ -33,8 +33,10 @@ export class LoginComponent {
            console.log(ok);
           if ( ok === true ) {
             this.router.navigateByUrl('/dashboard');
-          }else{}
-          Swal.fire('Error', ok, 'error')
+          }else{
+            Swal.fire('Error', ok, 'error')
+          }
+         
         })
 
     //this.router.navigateByUrl('/dashboard')
