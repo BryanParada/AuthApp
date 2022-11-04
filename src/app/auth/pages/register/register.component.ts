@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -17,11 +18,16 @@ export class RegisterComponent {
 }); 
 
 
-  constructor( private fb: FormBuilder ) { }
+  constructor( private fb: FormBuilder,
+               private router: Router ) { }
 
   register() {
     console.log(this.myFormRegister.value);
     console.log(this.myFormRegister.valid);
+
+    this.router.navigateByUrl('/dashboard')
   }
+
+
 
 }
