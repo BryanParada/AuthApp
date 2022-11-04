@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import Swal from "sweetalert2";
 
 @Component({
   selector: 'app-login',
@@ -28,12 +29,12 @@ export class LoginComponent {
     const {email, password} = this.myFormLogin.value;
 
     this.authService.login(email, password)
-        .subscribe( ok =>{
-          //console.log(resp);
-          if ( ok ) {
+        .subscribe( ok =>{ 
+           console.log(ok);
+          if ( ok === true ) {
             this.router.navigateByUrl('/dashboard');
           }else{}
-          //TODO: mostrar msje error
+          Swal.fire('Error', ok, 'error')
         })
 
     //this.router.navigateByUrl('/dashboard')

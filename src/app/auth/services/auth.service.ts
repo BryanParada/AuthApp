@@ -35,7 +35,7 @@ export class AuthService {
                       
                     }),
                     map( resp=> resp.ok ),
-                    catchError(err => of(false) ) //of para convertir a observable
+                    catchError(err => of(err.error.msg) ) //of para convertir a observable
                 );
 
   }
