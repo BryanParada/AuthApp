@@ -16,6 +16,33 @@ export class AuthService {
     return {...this._user};
   }
 
+  registerServ( name: string, email: string, password: string){
+
+    const url  = `${ this.baseURL }/auth/new`;
+    const body =  {name, email, password};
+
+    return this.http.post<AuthResponse>(url, body)
+    .pipe(
+        tap( resp =>{ 
+          if (resp.ok) {
+            console.log('print resp');
+            console.log(resp);
+            
+            localStorage.setItem('token', resp.token!);
+            this._user = {
+              name: resp.name!,
+              uid: resp.uid!
+            }
+
+          }
+          
+        }),
+        map( resp=> resp.ok ),
+        catchError(err => of(err.error.msg) ) //of para convertir a observable
+    );
+
+  }
+
   constructor( private http: HttpClient) { }
 
   login( email: string, password: string){
