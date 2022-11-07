@@ -31,8 +31,8 @@ https://node-angular-login.herokuapp.com/auth/login
 Clone/Download this project, run the commands "npm install" and "ng serve -o" to open the app.
 Download the DB from my other project: https://github.com/BryanParada/AuthBackend
 
-run the command (dev): npm run dev
-run the command (prod): npm start 
+* run the command (dev): npm run dev
+* run the command (prod): npm start 
 
 ## Built with
 
