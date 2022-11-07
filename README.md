@@ -26,6 +26,10 @@ https://node-angular-login.herokuapp.com/auth/login
 * SweetAlert
 * Deploying the production build into Heroku
 
+## LazyLoad Structure
+
+![image](https://user-images.githubusercontent.com/51382458/200382670-f96ec346-e392-479b-a4b6-8a79c949dbfe.png)
+
 ## How to use?
 
 Clone/Download this project, run the commands "npm install" and "ng serve -o" to open the app.
