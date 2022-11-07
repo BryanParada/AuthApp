@@ -29,7 +29,7 @@ https://node-angular-login.herokuapp.com/auth/login
 ## How to use?
 
 Clone/Download this project, run the commands "npm install" and "ng serve -o" to open the app.
-Download the DB from my other project: https://github.com/BryanParada/graphAppDB
+Download the DB from my other project: https://github.com/BryanParada/AuthBackend
 
 To run this db is required to install Json Server via npm with the next command:
 
