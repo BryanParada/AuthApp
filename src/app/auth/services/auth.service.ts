@@ -16,6 +16,8 @@ export class AuthService {
     return {...this._user};
   }
 
+  constructor( private http: HttpClient) { }
+
   registerServ( name: string, email: string, password: string){
 
     const url  = `${ this.baseURL }/auth/new`;
@@ -23,17 +25,12 @@ export class AuthService {
 
     return this.http.post<AuthResponse>(url, body)
     .pipe(
-        tap( resp =>{ 
-          if (resp.ok) {
+        tap( ({ok, token}) =>{ 
+          if (ok) {
             console.log('print resp');
-            console.log(resp);
+            console.log(ok);
             
-            localStorage.setItem('token', resp.token!);
-            this._user = {
-              name: resp.name!,
-              uid: resp.uid!
-            }
-
+            localStorage.setItem('token', token!);
           }
           
         }),
@@ -43,7 +40,7 @@ export class AuthService {
 
   }
 
-  constructor( private http: HttpClient) { }
+ 
 
   login( email: string, password: string){
 
@@ -55,11 +52,10 @@ export class AuthService {
                     tap( resp =>{ 
                       if (resp.ok) {
                         
+                        console.log('LOGIN!');
+                        console.log(resp);
+
                         localStorage.setItem('token', resp.token!);
-                        this._user = {
-                          name: resp.name!,
-                          uid: resp.uid!
-                        }
 
                       }
                       
@@ -84,7 +80,8 @@ export class AuthService {
                 localStorage.setItem('token', resp.token!);
                 this._user = {
                   name: resp.name!,
-                  uid: resp.uid!
+                  uid: resp.uid!,
+                  email: resp.email!
                 }
 
                 return resp.ok;
