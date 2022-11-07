@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  ApiEndpoint: 'http://localhost:4000/api'
+  ApiEndpoint: 'https://node-angular-login.herokuapp.com/api'
 };
