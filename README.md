@@ -31,23 +31,14 @@ https://node-angular-login.herokuapp.com/auth/login
 Clone/Download this project, run the commands "npm install" and "ng serve -o" to open the app.
 Download the DB from my other project: https://github.com/BryanParada/AuthBackend
 
-To run this db is required to install Json Server via npm with the next command:
-
-npm install -g json-server
-
-to start Json Server:
-
-json-server --watch db.json
-
-more info at: 
-https://www.npmjs.com/package/json-server
+run the command (dev): npm run dev
+run the command (prod): npm start 
 
 ## Built with
 
 * ![Angular][Angular.io]
 * ![TypeScript][TypeScript.io]
 * ![Bootstrap][Bootstrap.io] 
-* ![Nodejs][nodejs.io]  
 
 
 ## Development server
@@ -77,4 +68,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [Angular.io]: https://img.shields.io/badge/-Angular-red
 [TypeScript.io]: https://img.shields.io/badge/-TypeScript-blue
 [Bootstrap.io]: https://img.shields.io/badge/-Bootstrap%205-blueviolet 
-[nodejs.io]: https://img.shields.io/badge/-Node.js-brightgreen
