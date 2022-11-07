@@ -1,0 +1,89 @@
+[33mcommit 8deb7597737022ac2bd20ea89340b40db8d13b52[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Mon Nov 7 12:18:54 2022 -0300
+
+    V407 - Option B for useHash (false)
+
+[33mcommit 9a8563decd04245bcee3db9e8eeaabf903167c2e[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Mon Nov 7 11:51:49 2022 -0300
+
+    V402 - Work email revalidateToken
+
+[33mcommit c2852e023b90b05932c93467f01f1747e6aaba56[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Sun Nov 6 20:00:08 2022 -0300
+
+    V400 - Register
+
+[33mcommit 5f1df008769be1a3b8b950e645fd0488599f7147[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 18:01:38 2022 -0300
+
+    V398 - Logout - localStorage clear
+
+[33mcommit fa6bb91864328f6e4365fc7bb39da404e9646299[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 17:53:08 2022 -0300
+
+    V397 - ValidateToken Guard
+
+[33mcommit 5e8917b8d87b55f247d4dc7fced55802386db541[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 17:10:09 2022 -0300
+
+    V396 - localStorage token
+
+[33mcommit 8ed165100805273adf38b8ef126f68f63c7f5d88[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 16:49:04 2022 -0300
+
+    V395-B fix swal
+
+[33mcommit 26cd895a6445390af613b9211932f8ed1b2691da[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 16:43:09 2022 -0300
+
+    V395 - SweetAlert2
+
+[33mcommit f4e76d8f3170a7572cc1bc530feaa6168a857d0b[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 16:26:10 2022 -0300
+
+    V394 - Login - tap map catchError
+
+[33mcommit bad6037508de010bf241adb0ce4daa24d198b70f[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 15:31:32 2022 -0300
+
+    V393 - Login, interface, api
+
+[33mcommit a0fb22b0a5523f1f5bd57690fcf91a3492ae3701[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 15:18:25 2022 -0300
+
+    V392 - router.navigateByUrl
+
+[33mcommit d3ec321238d302aeab40aea3bee8813c453568d8[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Fri Nov 4 14:36:11 2022 -0300
+
+    V391 - Design Register Login Pages
+
+[33mcommit 26ee9981a10b0f28d65cea666368a675b0827bb6[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Thu Nov 3 22:27:31 2022 -0300
+
+    V389 - Routes - lazy load
+
+[33mcommit c123b1cbd01c0affe5f43235a80746e7c497f404[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Thu Nov 3 21:48:50 2022 -0300
+
+    V388 - Structure & CSS
+
+[33mcommit f3addbfd9a27408ddb23e0154d10ebf7b18f3130[m
+Author: Bryan Parada <bryan.parada.cea@gmail.com>
+Date:   Thu Nov 3 19:16:32 2022 -0300
+
+    initial commit
